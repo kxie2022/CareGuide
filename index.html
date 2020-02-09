@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Nuestra", sans-serif}
+.w3-bar,h1,button {font-family: "Nuestra", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+header {background-color: #FFE4F2;}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-left-align w3-large" style= "background-color: #FFB6E2">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="carewebsite.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Calendar</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mindfullness</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Support Group</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Empowerment</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Physical Health</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding: 120px 16px">
+<h1 class="w3-margin w3-jumbo" style= "color: #5F4118">User's Self Care Calendar</h1>
+</header>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Self care website name</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <table class="calendar">
+      <tr>
+        <td>
+          <div class="backDoor">
+            <div id="back_door1" onclick="toggleDay(this.id)">
+              <div class="inner_content" id="inner1" style="display:block;">
+                <p>
+                  Meditation
+                </p>
+
+              </div>
+              <div class="expand_content" id="expand1" style="display:none;">
+                <p>
+                  Day #1: Meditation <br> </br> Taking a couple minutes to practice meditation each day can change the
+                  way your brain reacts in stress and anxiety inducing situations. Meditation
+                  can help calm you down on a stressful day, and it’s even more effective
+                  when you maintain a daily practice. Practice meditation for 10 minutes today.
+                </p>
+                <iframe width="300" src="https://www.youtube.com/embed/p29mwfzpNc4"></iframe>
+                <a href="https://www.health.harvard.edu/mind-and-mood/how-meditation-helps-with-depression">Harvard meditation study</a>
+              </div>
+            </div>
+            <div class="door" id="door1" onclick ="toggleDoor(this.id)">
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class="backDoor">
+            <div id="back_door2" onclick="toggleDay(this.id)">
+              <div class="inner_content" id="inner2" style="display:block;">
+                <p>
+                  Journaling
+                </p>
+              </div>
+              <div class="expand_content" id="expand2" style="display:none;">
+                <p>
+                  Day #2: <br>Write 5 things you're grateful for!
+                  We spend a lot of our time thinking about what we are striving to achieve,
+                  and tend to forget about how far we have come and all that we have accomplished!
+                  Practicing gratitude has actually been scientifically proven to change our brain,
+                  as explained in the article linked below.
+                </p>
+                <a href="https://www.rtor.org/2019/06/12/how-writing-can-improve-your-mental-health/">Writing study</a>
+              </div>
+            </div>
+            <div class="door" id="door2" onclick ="toggleDoor(this.id)">
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class="backDoor">
+            <div id="back_door3" onclick="toggleDay(this.id)">
+              <div class="inner_content" id="inner3" style="display:block;">
+                <p>
+                  Get some fresh air!
+                </p>
+              </div>
+              <div class="expand_content" id="expand3" style="display:none;">
+                <p>
+                  Day #3: <br>Walking outside, especially outside can help
+                  reduce stress and allow you to clear your head, as explained in the article below.
+                </p>
+                <a href="https://www.huffpost.com/entry/walk-nature-depression_n_5870134">Taking A Walk In Nature Could Be The Best Thing You Do For Your Mood All Day</a>
+              </div>
+            </div>
+            <div class="door" id="door3" onclick ="toggleDoor(this.id)">
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class="backDoor">
+            <div id="back_door4" onclick="toggleDay(this.id)">
+              <div class="inner_content" id="inner4" style="display:block;">
+                <p>
+                  Listen to Music!
+                </p>
+              </div>
+              <div class="expand_content" id="expand4" style="display:none;">
+                <p>
+                  Day #4: <br>The tempo of a song can have a big impact on your brainwaves, and
+                  studies show that music around 60 beats per minute can put you in a really relaxed state.
+                </p>
+                <iframe width="300" src="https://www.youtube.com/embed/xINL9068Yvg&feature=related"></iframe>
+                <a href="https://www.youtube.com/watch?v=xINL9068Yvg&feature=related">A Moment for Peace Meditation</a>
+                <a href="https://www.unr.edu/counseling/virtual-relaxation-room/releasing-stress-through-the-power-of-music">Study on Releasing Stress through Music</a>
+              </div>
+            </div>
+            <div class="door" id="door4" onclick ="toggleDoor(this.id)">
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class="backDoor">
+            <div id="back_door5" onclick="toggleDay(this.id)">
+              <div class="inner_content" id="inner5" style="display:block;">
+                <p>
+                  Minimize technology use.
+                </p>
+              </div>
+              <div class="expand_content" id="expand5" style="display:none;">
+                <p>
+                  Day #5: <br>Don’t use an electronic device an hour before bed! <br></br>
+                  Having exposure to blue light, and disrupting our sleep/wake cycle.
+                  A change in sleep/wake cycle in teens can have long term effects
+                  because our brains are still developing, and can result in behavior
+                  disorders later in life. This explained in greater depth in the attached article.
+                </p>
+                <a href="https://www.abc.net.au/news/health/2016-10-21/how-technology-use-messes-with-your-sleep/7950336">How technology use messes with your sleep and what you can do about it</a>
+              </div>
+            </div>
+            <div class="door" id="door5" onclick ="toggleDoor(this.id)">
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class="backDoor">
+            <div id="back_door6" onclick="toggleDay(this.id)">
+              <div class="inner_content" id="inner6" style="display:block;">
+                <p>
+                  Learn a self defense move!
+                </p>
+              </div>
+              <div class="expand_content" id="expand6" style="display:none;">
+                <p>
+                  Day #6: <br>Self defense is not only important for
+                  personal safety, it is important for personal wellness. It has been
+                  proven that knowing you are capable of defending yourself increases
+                  confidence and drastically reduces stress at school and the workplace.
+                  Learn more about this from the link provided below:
+                </p>
+                <a href="https://www.corporatewellnessmagazine.com/article/why-include-self">Importance of Learning Self-Defense</a>
+                <iframe width="300" src="https://www.youtube.com/embed/CxTNLR1_umc"></iframe>
+                <a href="https://www.youtube.com/watch?v=CxTNLR1_umc">Self-Defense Techniques</a>
+              </div>
+            </div>
+            <div class="door" id="door6" onclick ="toggleDoor(this.id)">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="backDoor">
+            <div id="back_door7" onclick="toggleDay(this.id)">
+              <div class="inner_content" id="inner7" style="display:block;">
+                <p>
+                  Inspirational quotes
+                </p>
+              </div>
+              <div class="expand_content" id="expand7" style="display:none;">
+                <p>
+                  Day #7: <br>Take a few minutes to read some inspirational quotes at the start
+                  of your day. Inspirational quotes can leave you feeling empowered
+                  and help put you in the right mindset for the day.
+                </p>
+                <a href="https://www.pinterest.com/healthyplace/best-mental-health-quotes/">Inspirational mental health quotes Pinterest board</a>
+                <a href="https://www.beingbetterhumans.com/11-benefits-of-inspirational-quotes-and-tips-for-using-them/">Benefits of reading inspirational quotes</a>
+              </div>
+            </div>
+            <div class="door" id="door7" onclick ="toggleDoor(this.id)">
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+
+
+
+    <!--
+    <td>
+      <div class="backDoor">
+        <div class="inner_content">
+
+        </div>
+        <div class="door" id="door2" onclick ="toggleDoor(this.id)">
+        </div>
+      </div>
+    </td>
+  -->
+
+    <script>
+      /*
+      function multiplyNode(node, count, deep)
+      {
+        for (var i = 0, copy; i < count - 1; i++)
+        {
+            copy = node.cloneNode(deep);
+            node.parentNode.insertBefore(copy, node);
+        }
+      }
+
+      multiplyNode(document.querySelector('.backDoor'), 7, true);
+      */
+
+      // open door function
+      function toggleDoor(id) {
+        var el = document.getElementById(id);
+        el.classList.toggle("doorOpen");
+      }
+
+      // expand day
+      function toggleDay(id) {
+        var x = document.getElementById(id).getElementsByTagName("div");
+        console.log("x: " + x);
+        for(var i = 0; i < x.length; i++) {
+          console.log("item: " + x[i]);
+          if (x[i].style.display === "none") {
+            document.getElementById(x[i].id).style.display = "block";
+            console.log("block: " + x[i].id);
+          } else {
+            document.getElementById(x[i].id).style.display = "none";
+            console.log("none: " + x[i].id);
+          }
+        }
+      }
+    </script>
+
+  </body>
+</html>
